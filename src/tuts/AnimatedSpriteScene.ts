@@ -24,7 +24,8 @@ export class Scene extends Container {
         }
 
         const animatedClampy: AnimatedSprite = new AnimatedSprite(animFrames);
-        // animatedClampy.play();
+        animatedClampy.animationSpeed = 0.01;
+        animatedClampy.play();
         this.addChild(animatedClampy); // we just add it to the scene
 
         // Now... what did we learn about assigning functions...
