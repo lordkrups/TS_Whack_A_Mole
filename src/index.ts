@@ -1,5 +1,5 @@
 import { Application } from 'pixi.js'
-import { Scene } from './scenes/Scene'; // This is the import statement
+import { Scene } from './tuts/AnimatedSpriteScene'; // This is the import statement
 
 const app = new Application<HTMLCanvasElement>({
     view: document.getElementById("pixi-canvas") as HTMLCanvasElement,
@@ -11,6 +11,6 @@ const app = new Application<HTMLCanvasElement>({
 });
 
 // pass in the screen size to avoid "asking up"
-const sceny: Scene = new Scene(app.screen.width, app.screen.height);
+const sceny: Scene = new Scene();
 
 app.stage.addChild(sceny)
